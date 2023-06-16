@@ -1,0 +1,97 @@
+/* -----------------------Fixed Icons----------------------- */
+
+.fixedIcons {
+    position: fixed;
+    bottom: 0;
+    user-select: none;
+    padding: 2em;
+    padding-bottom: 3em;
+    transition: all .5s;
+    z-index: 999;
+    opacity: 1;
+}
+
+.fixednoLinkStyles {
+    all: unset;
+}
+
+/* Email */
+
+.fixedEmail {
+    left: 0;
+}
+
+.fixedEmailButton {
+    width: 3em;
+    height: 3em;
+    border-radius: 4em;
+    background: linear-gradient(90deg, rgba(0, 122, 179, 0.4) 0%, rgb(0, 61, 141, 0.4) 100%);
+    cursor: pointer;
+    transition: all .3s;
+}
+
+.fixedEmailButton:hover {
+    background: linear-gradient(90deg, rgba(0, 122, 179, 1) 0%, rgb(0, 61, 141, 1) 100%);
+    width: 8em;
+    --email-display: block;
+}
+
+.fixedemailIcon {
+    padding-top: .25em;
+    color: white;
+    font-size: 1.5em;
+    margin-left: .5em;
+    display: flex;
+    align-items: center;
+}
+
+.fixedemailText {
+    display: var(--email-display);
+    color: white;
+    font-size: .55em;
+    margin-left: .5em;
+    margin-top: .3em;
+    white-space: nowrap;
+}
+
+/* Scroll */
+
+.fixedScroll {
+    right: 0;
+}
+
+.fixedScrollButton {
+    width: 3em;
+    height: 3em;
+    border-radius: 4em;
+    background-color: rgba(0, 122, 179, 0.4);
+    cursor: pointer;
+    transition: all .2s;
+}
+
+.fixedScrollButton:hover {
+    background-color: rgb(0, 98, 179);
+}
+
+.fixedscrollText {
+    color: white;
+    font-size: 1.5em;
+    padding-top: .2em;
+    margin-left: .55em;
+}
+
+/* -----------------------Media Queries----------------------- */
+
+@media screen and (max-width: 1260px) {
+    .fixedScroll {
+        display: none;
+    }
+}
+
+/* -----------------------Media Queries----------------------- */
+
+@media screen and (max-width: 900px) {
+    .fixedEmail {
+        display: none;
+    }
+}

@@ -1,0 +1,199 @@
+/* Phone */
+
+.phone {
+    height: 30em;
+    width: 15em;
+    border-radius: 2.5em;
+    border: .6em solid rgb(243, 243, 243);
+    background-color: white;
+    position: relative;
+}
+
+.phoneShadow {
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+
+.phoneShadowOther {
+    box-shadow: rgb(38, 57, 77) -15px 20px 15px -10px;
+}
+
+.phone2 {
+    height: 23em;
+}
+
+.topPhone {
+    height: 3em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    column-gap: .5em;
+}
+
+.topBar {
+    width: 20%;
+    height: 10%;
+    background-color: rgb(223, 223, 223);
+    border-radius: 5em;
+}
+
+.topCircle {
+    width: .6em;
+    height: .6em;
+    background-color: rgb(223, 223, 223);
+    border-radius: 10em;
+}
+
+.phoneScreen {
+    position: relative;
+    margin: .5em;
+    height: 79%;
+    background: rgb(0, 99, 255);
+    background: linear-gradient(0deg, var(--swatch1) 0%, var(--lightSwatch) 40%, var(--lightSwatch) 60%, var(--swatch1) 100%);
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: filter .5s;
+    overflow: hidden;
+}
+
+.phoneScreen2 {
+    height: 76%;
+}
+
+.screenIconBox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.screenIcon {}
+
+.screenText {
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: .1em;
+    z-index: 1;
+    color: rgba(245, 245, 245, 0.993);
+}
+
+.screenActive {
+    position: relative;
+    z-index: 2;
+}
+
+.screenFade {
+    position: relative;
+    z-index: 0;
+}
+
+/* Hover Animation */
+
+.hover {
+    animation: mover 3s infinite alternate;
+}
+
+@keyframes mover {
+    0% {
+        transform: translateY(0);
+    }
+
+    100% {
+        transform: translateY(-20px);
+    }
+}
+
+.buttonBox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button {
+    background-color: rgb(223, 223, 223);
+    width: 2em;
+    height: 2em;
+    border-radius: 1em;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 0px 0px 1px, rgb(209, 213, 219) 0px 0px 0px 1px inset;
+}
+
+.button:hover {
+    cursor: pointer;
+    background-color: rgb(216, 216, 216);
+}
+
+.button:active {
+    background-color: rgb(199, 199, 199);
+}
+
+.absoluteOverlay {
+    z-index: 1;
+    position: absolute;
+    background: linear-gradient(0deg, var(--darkSwatch1) 0%, var(--darkSwatch2) 40%, var(--darkSwatch2) 60%, var(--darkSwatch1) 100%);
+    width: 200%;
+    height: 100%;
+    clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+}
+
+.centerOverlay {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    row-gap: 1em;
+}
+
+.centerOverlayImage {
+    width: 5em;
+    height: auto;
+}
+
+.centerOverlayText {
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: .1em;
+    color: rgba(245, 245, 245, 0.993);
+}
+
+.contentImage {
+    width: 5em;
+    filter: drop-shadow(0 0 .12em black)
+}
+
+.buttonScreen {
+    text-decoration: none;
+    width: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Franklin Gothic Medium';
+    color: rgba(245, 245, 245, 0.993);
+    background: linear-gradient(90deg, var(--swatch3) 0%, var(--swatch2) 100%);
+    letter-spacing: .1em;
+    margin-top: .5em;
+    font-size: 1em;
+    padding: .5em;
+    padding-top: .3em;
+    padding-bottom: .3em;
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 2px 7px;
+    transition: all .3s;
+}
+
+.buttonScreen:hover {
+    box-shadow: rgba(0, 0, 0, 0.29) 0px 5px 10px, rgba(0, 0, 0, 0.23) 0px 3px 3px;
+    cursor: pointer;
+}
+
+.buttonImage {
+    width: 4em;
+    filter: drop-shadow(0 0 .12em black)
+}
+
+.buttonScreenImage {
+    width: 10em;
+    filter: drop-shadow(0 0 .2em black)
+}
