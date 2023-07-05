@@ -247,7 +247,7 @@ h2 {
     .card {
         width: 70vw;
         max-width: 15.875rem;
-        height: 19.125rem;
+        height: 24.125rem;
         font-size: 1em;
     }
 
@@ -273,5 +273,15 @@ h2 {
 
     .card__title::after {
         height: 0.2125rem;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .card {
+        height: 20.125rem;
+    }
+
+    .card__content {
+        height: 30%;
     }
 }
