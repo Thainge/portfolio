@@ -581,7 +581,7 @@
 .portfolioContainer {
     width: 100%;
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
 }
 
@@ -753,6 +753,13 @@
 }
 
 @media screen and (max-width: 700px) {
+    .center {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
     .projectsList {
         display: flex;
         justify-content: center;

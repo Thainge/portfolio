@@ -49,7 +49,7 @@ h2 {
 .card {
     display: grid;
     place-items: center;
-    width: 80vw;
+    width: 20vw;
     max-width: 25.875rem;
     height: 32.125rem;
     overflow: hidden;
@@ -139,6 +139,11 @@ h2 {
     color: rgb(194, 194, 194);
 }
 
+.tags {
+    background-color: red;
+    margin-right: 2em;
+}
+
 @media (any-hover: hover) and (any-pointer: fine) {
     .card__content {
         transform: translateY(45%);
@@ -192,10 +197,14 @@ h2 {
     }
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1620px) {
+    .card__content {
+        height: 30%;
+    }
+
     .card {
-        max-width: 16.875rem;
-        height: 23.125rem;
+        width: 20vw;
+        height: 27.125rem;
     }
 
     .card__title {
@@ -215,7 +224,38 @@ h2 {
     }
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 1300px) {
+    .card {
+        width: 25vw;
+        max-width: 20.875rem;
+        height: 25.125rem;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .card {
+        width: 40vw;
+        max-width: 25.875rem;
+        height: 30.125rem;
+    }
+
+    .card__content {
+        height: 28%;
+    }
+}
+
+@media screen and (max-width: 725px) {
+    .card {
+        width: 70vw;
+        max-width: 15.875rem;
+        height: 19.125rem;
+        font-size: 1em;
+    }
+
+    .card__content {
+        height: 30%;
+    }
+
     .card__title {
         font-size: 1.4em;
     }
@@ -230,5 +270,9 @@ h2 {
 
     .card__content {
         padding: 16% 1.25rem 1.875rem 4em;
+    }
+
+    .card__title::after {
+        height: 0.2125rem;
     }
 }

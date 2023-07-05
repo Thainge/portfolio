@@ -68,7 +68,7 @@ function Home() {
                         <div className={styles.papaCol2}>
                             <div className={styles.projectHeaderContainer}>
                                 <Fade right distance='10em'>
-                                    <div>
+                                    <div className={styles.center}>
                                         <h2 className={styles.sectionH2}>Portfolio</h2>
                                         <h1 className={styles.sectionH1}>Professional Projects</h1>
                                     </div>

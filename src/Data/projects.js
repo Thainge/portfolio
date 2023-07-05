@@ -6,7 +6,7 @@ const projectsData = [
         github: "https://github.com/Thainge/intertek-dashboard",
         url: "",
         date: "March 2022",
-        tags: ["Website, Full-Stack, Open-Source"]
+        tags: ["Microsoft SharePoint, Microsoft Azure, React.js, ASP.NET, SQL Server"]
     },
     {
         image: require('../assets/Work/2.png'),
@@ -15,7 +15,16 @@ const projectsData = [
         github: "",
         url: "https://simplycyberllc.com",
         date: "December 2022",
-        tags: ["Website, UX/UI Design"]
+        tags: ["React.js, UX/UI Design Node.js"]
+    },
+    {
+        image: require('../assets/Work/5.png'),
+        imageAlt: "Discussion Fourms",
+        title: "Discussion Fourms",
+        github: "https://github.com/Thainge/discussions-app",
+        url: "",
+        date: "July 2023",
+        tags: ["Angular.js, ASP.NET, SQL Server, Microsoft Azure"]
     },
     {
         image: require('../assets/Work/3.png'),
@@ -24,7 +33,7 @@ const projectsData = [
         github: "https://github.com/Thainge/simply-chiro",
         url: "",
         date: "November 2022",
-        tags: ["Website, Full-Stack, Open-Source"]
+        tags: ["React.js, Node.js, MongoDB"]
     },
     {
         image: require('../assets/Work/4.png'),
@@ -33,7 +42,7 @@ const projectsData = [
         github: "https://github.com/Thainge/card-kingdom",
         url: "",
         date: "October 2022",
-        tags: ["Website, Web Sockets, Open-Source"]
+        tags: ["React.js, Node.js, Web Sockets, Multiplayer"]
     },
 ]
 
