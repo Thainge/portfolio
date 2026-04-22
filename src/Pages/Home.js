@@ -38,7 +38,7 @@ function Home() {
                                 <ReactRotatingText items={['Fullstack Developer', 'UI/UX Designer']} />
                             </h1>
                             <div className={styles.headerPara}>
-                                Experienced as a Full Stack Developer and Consultant consisting of over three (3) years of experience with all phases of the software development lifecycle. Specializes in analyzing large volumes of data, problem-solving, and presentation of data through visualization and reporting. Development experience leading projects in large enterprise infrastructures involving Data Analytics, Build/Release Management, and Cloud Development.
+                                Full Stack Developer with over four (4) years of experience architecting large-scale applications across enterprise infrastructures. Expertise in Angular, React, .NET, C#, and cloud-based architectures, delivering secure, highly scalable solutions supporting 8,000+ users daily in high-availability environments across state correctional facilities. Proven ability to architect and maintain mission-critical healthcare applications, supporting high-volume users with strong security, performance, and uptime.
                             </div>
                             <div className={styles.headerButtons}>
                                 <div className={styles.button2} onClick={scrollToPortfolio}>View Portfolio</div>

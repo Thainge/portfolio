@@ -65,6 +65,7 @@ h2 {
 
 .card__background {
     object-fit: cover;
+    object-position: left center;
     max-width: 100%;
     height: 100%;
     filter: brightness(80%) blur(.1em)
@@ -75,13 +76,17 @@ h2 {
     display: flex;
     flex-direction: column;
     align-self: flex-end;
-    height: 33%;
-    padding: 12% 1.25rem 1.875rem 4em;
+    box-sizing: border-box;
+    height: auto;
+    max-height: 100%;
+    min-height: 33%;
+    padding: 16% 1.5rem 1rem 1.5rem;
     background: linear-gradient(180deg,
             hsla(0, 0%, 0%, 0) 0%,
             hsla(0, 0%, 0%, 0.3) 10%,
             hsl(0, 0%, 0%) 100%);
     width: 100%;
+    overflow: hidden;
 }
 
 
@@ -145,7 +150,8 @@ h2 {
 
 @media (any-hover: hover) and (any-pointer: fine) {
     .card__content {
-        transform: translateY(45%);
+        --card-content-peek: 9rem;
+        transform: translateY(calc(100% - var(--card-content-peek)));
         transition: transform 350ms ease-out;
     }
 
@@ -174,6 +180,7 @@ h2 {
     .card:hover .card__content {
         transform: translateY(0);
         transition: transform 350ms ease-in;
+        overflow-y: auto;
     }
 
     .card:hover .card__background {
@@ -198,7 +205,7 @@ h2 {
 
 @media screen and (max-width: 1620px) {
     .card__content {
-        height: 30%;
+        min-height: 30%;
     }
 
     .card {
@@ -219,7 +226,7 @@ h2 {
     }
 
     .card__content {
-        padding: 16% 2.25rem 1.875rem 4em;
+        padding: 16% 1.5rem 1rem 1.5rem;
     }
 }
 
@@ -239,7 +246,7 @@ h2 {
     }
 
     .card__content {
-        height: 28%;
+        min-height: 28%;
     }
 }
 
@@ -252,7 +259,7 @@ h2 {
     }
 
     .card__content {
-        height: 30%;
+        min-height: 30%;
     }
 
     .card__title {
@@ -268,7 +275,7 @@ h2 {
     }
 
     .card__content {
-        padding: 16% 1.25rem 1.875rem 4em;
+        padding: 16% 1.5rem 1rem 1.5rem;
     }
 
     .card__title::after {
@@ -282,6 +289,6 @@ h2 {
     }
 
     .card__content {
-        height: 30%;
+        min-height: 30%;
     }
 }
